@@ -1,13 +1,23 @@
 {
   "name": "studio-engine",
-  "version": "2.0.0",
+  "version": "1.0.2",
+  "main": "dist/server/index.js",
   "type": "module",
-  "scripts": { "dev": "ts-node src/server/index.ts", "build": "tsc" },
-  "dependencies": {
-    "fastify": "^4.25.2",
-    "fastify-cors": "^8.4.0",
-    "fastify-rate-limit": "^7.4.0",
-    "node-fetch": "^3.3.2"
+  "scripts": {
+    "dev": "ts-node src/server/index.ts",
+    "build": "tsc",
+    "start": "node dist/server/index.js"
   },
-  "devDependencies": { "typescript": "^5.3.3", "ts-node": "^10.9.1" }
+  "dependencies": {
+    "fastify": "^4.27.0",
+    "@fastify/cors": "^8.3.0",
+    "@fastify/static": "^6.12.0",
+    "dotenv": "^16.4.5",
+    "fs-extra": "^11.2.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "ts-node": "^10.9.2"
+  }
 }

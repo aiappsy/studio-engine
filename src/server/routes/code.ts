@@ -1,0 +1,1 @@
+export default async function r(a){ a.post('/code', async()=>({ok:true})); }

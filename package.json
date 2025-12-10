@@ -1,6 +1,13 @@
 {
   "name": "studio-engine",
-  "version": "1.0.0",
-  "main": "index.ts",
-  "type": "module"
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": { "dev": "ts-node src/server/index.ts", "build": "tsc" },
+  "dependencies": {
+    "fastify": "^4.25.2",
+    "fastify-cors": "^8.4.0",
+    "fastify-rate-limit": "^7.4.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": { "typescript": "^5.3.3", "ts-node": "^10.9.1" }
 }

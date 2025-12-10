@@ -1,0 +1,1 @@
+export default async function r(a){ a.post('/page', async()=>({ok:true})); }
